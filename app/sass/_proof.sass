@@ -1,0 +1,106 @@
+.socialProof
+    width: 360px
+    margin: 0 auto
+    padding: 0 24px
+.header
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 80px 0 50px 0 
+    &__heading
+        font-size: 28px
+        margin-bottom: 25px
+    &__text
+        color: $color-darkGrayMagenta
+        font-size: 13.5px
+        line-height: 1.5
+        margin-bottom: 47px
+.rating
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $color-lightGrayMagenta
+    border-radius: 6px
+    margin-bottom: 16px
+    padding-top: 16px
+    &__stars
+        background-image: url(../images/icon-star.svg)
+        width: 85px
+        height: 16px
+    &__text h2
+        font-weight: 700
+        font-size: 11px
+        color: $color-darkMagenta
+        margin: 16px 0
+.opinions
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.opinion
+    width: 328px
+    background-color: $color-darkMagenta
+    margin-bottom: 16px
+    border-radius: 6px
+    padding: 40px 43px 34px 33px
+.client__header
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+.client__photo
+    border-radius: 100%
+    width: 40px
+    height: 40px
+.client__name
+    margin-left: 24px
+    font-size: 13px
+    color: $color-white
+    span
+        display: block
+        margin-top: 4px
+        font-size: 11px
+        color: $color-softPink
+        font-weight: 400
+.quote blockquote p
+    color: $color-white
+    font-size: 12px
+    font-weight: 500
+    line-height: 2
+@media screen and (min-width: 1000px)
+    .socialProof
+        width: 100%
+        max-width: 1145px
+    .header
+        flex-direction: row
+        justify-content: space-between
+        
+        position: relative
+        &__heading
+            font-size: 43px
+            text-align: left
+            width: 80%
+        &__text
+            text-align: left
+            font-size: 15px
+            width: 87%
+        &__descripton
+            flex-basis: 50%
+    .rating
+        flex-basis: 50%
+        flex-direction: row
+        padding-left: 34px
+        padding-right: 50px
+        width: 450px
+        &__stars
+            margin-right: 20px
+    .rating:nth-child(1)
+        transform: translateX(-100px)
+    .rating:nth-child(2)
+        transform: translateX(-50px)
+    
+    .opinions
+        flex-direction: row
+    .opinion:nth-child(2)
+
+        transform: translateY(20px)
+    .opinion:nth-child(3)
+        transform: translateY(40px)
